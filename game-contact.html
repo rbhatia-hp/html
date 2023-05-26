@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - Online games</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Fill Out This Form</legend>
+                <div>
+                    <label for="first_name">Enter First Name :</label><input type="text" placeholder="Your First Name"
+                        id="first_name" required />
+                </div><br />
+                <div>
+                    <label for="last_name">Enter Last Name :</label><input type="text" placeholder="Your Last Name"
+                        id="last_name" required />
+                </div><br />
+                <div>
+                    <label for="email">Email : </label><input type="email" id="email" />
+                </div><br />
+                <div>
+                    <label for="dob">date of Birth : </label><input type="date" id="dob" />
+                </div><br />
+                <div>
+                    <label for="gender">Gender : </label>
+                    <input type="radio" name="role" id="male" /><label for="male"> Male</label>
+                    <input type="radio" name="role" id="female" /><label for="female"> Female</label>
+                    <input type="radio" name="role" id="others" /><label for="others"> Others</label>
+                </div><br />
+                <div>
+                    <label for="game">Favorite Game : </label>
+                    <input list="fav-game" />
+                    <datalist id="fav-game">
+                        <option value="PUBG Mobile" />
+                        <option value="Garena Free Fire" />
+                        <option value="Pokimon Go" />
+                        <option value="Candy Crush Saga" />
+                        <option value="Clash of Clans" />
+                    </datalist>
+                </div><br />
+                <div>
+                    <label for="address">Address : </label><br />
+                    <textarea rows="4" cols="20" id="address"></textarea>
+                </div><br />
+                <div>
+                    <input type="submit" value="Click to Submit" />
+                    <input style="margin-right:10px" type="reset" value="Click to Reset" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
